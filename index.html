@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARGUS Glass: AI Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // Enable class-based dark mode
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              // Light Theme (Default)
+              'argus-bg': '#F7F9FC',
+              'argus-surface': '#FFFFFF',
+              'argus-text-primary': '#2D3748',
+              'argus-text-secondary': '#718096',
+              'argus-primary': '#007BFF',
+              'argus-secondary': '#0056b3',
+              'argus-accent': '#50E3C2',
+              'argus-border': '#E2E8F0',
+              // High Contrast (Dark) Theme
+              'hc-bg': '#121212',
+              'hc-surface': '#1E1E1E',
+              'hc-text-primary': '#E0E0E0',
+              'hc-text-secondary': '#A0A0A0',
+              'hc-border': '#333333',
+              'hc-green': '#34D399', // For 'on' state
+              'hc-yellow': '#FBBF24', // For 'off' state
+            },
+            animation: {
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F7F9FC;
+      }
+      .dark body {
+        background-color: #121212;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.17.0",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

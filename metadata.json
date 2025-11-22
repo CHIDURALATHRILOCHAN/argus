@@ -1,0 +1,8 @@
+{
+  "name": "Copy of ARGUS Glass: AI Navigation & OCR Assistant",
+  "description": "An AI-powered web application designed for accessibility, providing object detection for navigation and text-to-speech OCR capabilities to assist visually impaired users. This app simulates the core features of the ARGUS Glass concept using Gemini.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
